@@ -25,6 +25,11 @@
 	      	<div id="my-botui-app">
   				<bot-ui></bot-ui>
 			</div>
+			<form id="chatForm" action="{% url 'chat' %}" method="post" accept-charset="utf-8">
+				{% csrf_token %}
+				<input id="userInput" type="text" name="user_input">
+				<button type="submit">Send</button>
+			</form>
 	    </div>
 	    <div class="col-sm">
 	      
