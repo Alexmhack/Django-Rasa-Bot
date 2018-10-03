@@ -17,8 +17,10 @@ def handle_response(request, *args, **kwargs):
 			message = request.POST.get('user_input')
 			responses = agent.handle_message(message)
 			print(responses)
-			return JsonResponse({'status': 'OK'})
+			bot_data = {
+				'status': 'OK',
+				'responses': responses[0]['text']
+			}
+			return JsonResponse(bot_data)
 		except Exception as e:
-			print(request)
-			print(request.POST.get('user_input'))
-			print(e)
+			return JsonResponse({'status': 'FAILED'})
