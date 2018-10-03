@@ -1,0 +1,261 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "good morning"
+      },
+      {
+        "intent": "greet",
+        "text": "good evening"
+      },
+      {
+        "intent": "greet",
+        "text": "good afternoon"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "seeya"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see ya"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you around"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "yes"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "indeed"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "of course"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "obviously"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "that sounds good"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "correct"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "alright"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "alright then"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "sure"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "that's nice"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "awesome"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "yeah"
+      },
+      {
+        "intent": "mood_affirm",
+        "text": "yippy"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "no"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "never"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "nahhh"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "I don't think so"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "don't like that"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "no way"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "not really"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "not sure"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "nope"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "definitely not"
+      },
+      {
+        "intent": "mood_deny",
+        "text": "wrong"
+      },
+      {
+        "intent": "mood_great",
+        "text": "perfect"
+      },
+      {
+        "intent": "mood_great",
+        "text": "good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "very good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "great"
+      },
+      {
+        "intent": "mood_great",
+        "text": "amazing"
+      },
+      {
+        "intent": "mood_great",
+        "text": "wonderful"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I'am feeling very good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I'am great"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I'm good"
+      },
+      {
+        "intent": "mood_great",
+        "text": "definitely"
+      },
+      {
+        "intent": "mood_great",
+        "text": "that's perfect"
+      },
+      {
+        "intent": "mood_great",
+        "text": "I'am feeling better"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "sad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "very sad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "unhappy"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "bad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "very bad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "awful"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "terrible"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "not very good"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "extremely sad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "so sad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "not feeling nice"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "feeling bad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "awfully bad"
+      },
+      {
+        "intent": "mood_unhappy",
+        "text": "I am so sad"
+      }
+    ],
+    "regex_features": [],
+    "lookup_tables": [],
+    "entity_synonyms": []
+  }
+}
