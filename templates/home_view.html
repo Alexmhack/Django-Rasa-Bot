@@ -11,19 +11,31 @@
 	
 	<!-- default theme - you can create your own theme -->
     <link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui-theme-default.css">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   </head>
   <body>
+  	<div class=""></div>
 
-  	<div id="my-botui-app">
-  		<bot-ui></bot-ui>
+  	<div class="">
+  		<div id="my-botui-app">
+  			<bot-ui></bot-ui>
+		</div>
 	</div>
 
+  	<div class=""></div>
+  	
   	<!-- SCRIPTS -->
 	<!-- Vue - BotUI requires Vue to be present in page -->
 	<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js" type="text/javascript" charset="utf-8"></script>
-
 	<!-- BotUI - main file -->
 	<script src="https://unpkg.com/botui/build/botui.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- bootstrap js -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 	<!-- custom script -->
 	<script src="{% static 'js/script.js' %}" type="text/javascript" charset="utf-8"></script>
