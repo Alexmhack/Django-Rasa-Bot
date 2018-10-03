@@ -1,7 +1,5 @@
 var botui = new BotUI('my-botui-app');
 
-var message = $("input[type=text]").val();
-
 function sendMessage(message) {
 	console.log('sendMessage is working')
 	var data = {
@@ -9,27 +7,30 @@ function sendMessage(message) {
 	};
 
 	$.ajax({
-		method: "POST",
-		url: "http://localhost:5005/webhooks/rest/webhook?stream=true&token",
-		data: data,
+		type: "POST",
+		url: "http://localhost:8000/chat/",
+		dataType: 'json',
+		data: {
+			'msg': message
+		},
 		success: (res) => {
-			console.log(res);
-			return res.get('text');
+			console.log(res.get('text'))
 		},
 		error: (err) => {
 			console.error(err);
-			return err;
+			console.error(err.status);
+			console.error(err.statusText);
 		}
 	});
 }
 
 botui.message.add({ // show a message
   human: true,
-  content: 'Whats your name?'
+  content: 'Hey there! I am Django Bot'
 }).then(function () { // wait till its shown
   return botui.action.text({ // show 'text' action
     action: {
-      placeholder: 'Your name'
+      placeholder: 'Enter your message here...'
     }
   });
 }).then(function (res) { // get the result
