@@ -135,3 +135,9 @@ STATICFILES_DIRS = [
 
 # allow cors headers
 CORS_ORIGIN_ALLOW_ALL = True
+
+
+# path for rasa_core models and dialogue
+RASA_CORE_MODELS = os.path.join(BASE_DIR, 'rasachat', 'models', 'dialogue')
+
+RASA_CORE_NLU = os.path.join(BASE_DIR, 'rasachat', 'models', 'current', 'nlu')
