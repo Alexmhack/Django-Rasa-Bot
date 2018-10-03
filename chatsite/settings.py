@@ -132,3 +132,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+
+# allow cors headers
+CORS_ORIGIN_ALLOW_ALL = True
