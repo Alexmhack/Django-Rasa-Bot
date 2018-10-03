@@ -1,13 +1,32 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Django BotUI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- required for basic layout -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui.min.css">
+	
+	<!-- default theme - you can create your own theme -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/botui/build/botui-theme-default.css">
   </head>
   <body>
 
+  	<div id="my-botui-app">
+  		<bot-ui></bot-ui>
+	</div>
 
+  	<!-- SCRIPTS -->
+	<!-- Vue - BotUI requires Vue to be present in page -->
+	<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- BotUI - main file -->
+	<script src="https://unpkg.com/botui/build/botui.min.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- custom script -->
+	<script src="{% static 'js/script.js' %}" type="text/javascript" charset="utf-8"></script>
 
   </body>
 </html>
