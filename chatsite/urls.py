@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .views import home_view
+from .views import home_view, handle_response
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +24,5 @@ urlpatterns = [
 
 urlpatterns += [
     path('', home_view, name='home'),
+    path('chat/', handle_response, name='chat')
 ]
