@@ -8,11 +8,17 @@ def home_view(request):
 	return render(request, 'home_view.html')
 
 
-@csrf_exempt
+# @csrf_exempt
 def handle_response(request, *args, **kwargs):
 	if request.method == "POST":
-		print(request)
-		print(kwargs)
-		responses = agent.handle_message(message)
-		print(responses)
-		return JsonResponse(responses)
+		try:
+			print(request)
+			print(request.POST.get('user_input'))
+			message = request.POST.get('user_input')
+			responses = agent.handle_message(message)
+			print(responses)
+			return JsonResponse({'status': 'OK'})
+		except Exception as e:
+			print(request)
+			print(request.POST.get('user_input'))
+			print(e)
