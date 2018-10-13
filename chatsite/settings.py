@@ -14,9 +14,9 @@ import os
 
 from decouple import config
 
-from rasa_core.agent import Agent
-from rasa_core.channels.socketio import SocketIOInput
-from rasa_core.agent import Agent
+# from rasa_core.agent import Agent
+# from rasa_core.channels.socketio import SocketIOInput
+# from rasa_core.agent import Agent
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -149,16 +149,16 @@ RASA_CORE_NLU = os.path.join(BASE_DIR, 'rasachat', 'models', 'current', 'nlu')
 # RASA SOCKET CHANNEL
 
 # load your trained agent
-agent = Agent.load(RASA_CORE_MODELS, interpreter=RASA_CORE_NLU)
+# agent = Agent.load(RASA_CORE_MODELS, interpreter=RASA_CORE_NLU)
 
-input_channel = SocketIOInput(
-    # event name for messages sent from the user
-    user_message_evt="user_uttered",
-    # event name for messages sent from the bot
-    bot_message_evt="bot_uttered",
-    # socket.io namespace to use for the messages
-    namespace=None
-)
+# input_channel = SocketIOInput(
+#     # event name for messages sent from the user
+#     user_message_evt="user_uttered",
+#     # event name for messages sent from the bot
+#     bot_message_evt="bot_uttered",
+#     # socket.io namespace to use for the messages
+#     namespace=None
+# )
 
-# set serve_forever=False if you want to keep the server running
-s = agent.handle_channels([input_channel], 5500, serve_forever=True)
+# # set serve_forever=False if you want to keep the server running
+# s = agent.handle_channels([input_channel], 5500, serve_forever=True)
