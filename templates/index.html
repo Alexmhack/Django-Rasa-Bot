@@ -18,30 +18,51 @@
   <body>
   	<div class="container">
 	  <div class="row">
-	    <div class="col-sm">
+	    <!-- <div class="col-sm">
 	      
 	    </div>
-	    <div class="col-sm">
-	      	<div id="my-botui-app">
+	    <div class="col-sm"> -->
+	      	<!-- <div id="my-botui-app">
   				<bot-ui></bot-ui>
 			</div>
 			<form id="chatForm" action="{% url 'chat' %}" method="post" accept-charset="utf-8">
 				{% csrf_token %}
 				<input id="userInput" type="text" name="user_input">
 				<button type="submit">Send</button>
-			</form>
-	    </div>
+			</form> -->
+
+			<h1 class="text-left mt-5">Django-Rasa-BotUI</h1>
+
+			<div id="webchat">
+				<script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+				<script>
+				    WebChat.default.init({
+				        selector: "#webchat",
+				        initPayload: "/get_started",
+				        interval: 1000, // 1000 ms between each message
+				        customData: {"sender": "django"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+				        socketUrl: "http://127.0.0.1:550/bot/",
+				        title: "Connect",
+				        subtitle: "The bot which connects people",
+				        profileAvatar: "{% static 'img/profile_avatar.jpg' %}",
+				        showCloseButton: true,
+				        fullScreenMode: false
+				    })
+				</script>
+			</div>
+
+	    <!-- </div>
 	    <div class="col-sm">
 	      
-	    </div>
+	    </div> -->
 	  </div>
 	</div>
 
   	<!-- SCRIPTS -->
 	<!-- Vue - BotUI requires Vue to be present in page -->
-	<script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js" type="text/javascript" charset="utf-8"></script>
-	<!-- BotUI - main file -->
-	<script src="https://unpkg.com/botui/build/botui.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	BotUI - main file
+	<script src="https://unpkg.com/botui/build/botui.min.js" type="text/javascript" charset="utf-8"></script> -->
 
 	<!-- bootstrap js -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -49,7 +70,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 	<!-- custom script -->
-	<script src="{% static 'js/script.js' %}" type="text/javascript" charset="utf-8"></script>
+	<!-- <script src="{% static 'js/script.js' %}" type="text/javascript" charset="utf-8"></script> -->
 
 	<!-- ajax cdn -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
