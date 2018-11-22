@@ -2,7 +2,7 @@
 **Replace the rasachat/models folder with your models folder and run django server and bot.py file**
 
 # Django-Rasa-BotUI
-Integrating Rasa Core with Django backend and finally using Bot UI for chatbot user interface
+Integrating Rasa Core with Django backend and finally using Webchat for chatbot user interface
 
 In this project we will be using [rasa_core](https://rasa.com/docs/core/quickstart/) 
 for our chatbot backend **django** for website backend and [rasa-webchat](https://github.com/mrbot-ai/rasa-webchat) for chatbot **User Interface**
