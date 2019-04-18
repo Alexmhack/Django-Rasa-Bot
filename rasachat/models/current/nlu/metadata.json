@@ -41,10 +41,11 @@
         },
         {
             "name": "ner_synonyms",
-            "synonyms_file": "entity_synonyms.json",
+            "synonyms_file": null,
             "class": "rasa_nlu.extractors.entity_synonyms.EntitySynonymMapper"
         },
         {
+            "analyzer": "word",
             "token_pattern": "(?u)\\b\\w\\w+\\b",
             "strip_accents": null,
             "stop_words": null,
@@ -61,13 +62,11 @@
             "class": "rasa_nlu.featurizers.count_vectors_featurizer.CountVectorsFeaturizer"
         },
         {
-            "num_hidden_layers_a": 2,
-            "hidden_layer_size_a": [
+            "hidden_layers_sizes_a": [
                 256,
                 128
             ],
-            "num_hidden_layers_b": 0,
-            "hidden_layer_size_b": [],
+            "hidden_layers_sizes_b": [],
             "batch_size": [
                 64,
                 256
@@ -79,6 +78,7 @@
             "similarity_type": "cosine",
             "num_neg": 20,
             "use_max_sim_neg": true,
+            "random_seed": null,
             "C2": 0.002,
             "C_emb": 0.8,
             "droprate": 0.2,
@@ -92,6 +92,6 @@
         }
     ],
     "training_data": "training_data.json",
-    "trained_at": "20181002-190047",
-    "rasa_nlu_version": "0.13.5"
+    "trained_at": "20190418-233839",
+    "rasa_nlu_version": "0.14.6"
 }
