@@ -8,6 +8,12 @@ def home_view(request):
 	return render(request, 'index.html')
 
 
+@csrf_exempt
+def webhook(request):
+	print(request.POST)
+	return JsonResponse({"status": "OK"})
+
+
 # # @csrf_exempt
 # def handle_response(request, *args, **kwargs):
 # 	if request.method == "POST":
