@@ -1,5 +1,11 @@
+### Chatbot Models are up to date with the current versions of rasa core & nlu
+
 # Usage
-**Replace the rasachat/models folder with your models folder and run django server and bot.py file**
+**Replace the rasachat/models folder with your models folder and run django server and bot.py file seperately**
+
+**The data used to train the chatbot is very minimal, you should extend and improve the training data by updating `rasachat/nlu.nd` & `rasachat/stories.md` files.**
+
+Also refer to [Django-Rasa-Sockets](https://github.com/Alexmhack/Django-Rasa-Sockets) for more info on implementing Django and Rasa with Sockets.
 
 # Django-Rasa-Bot
 Integrating Rasa Core with Django backend and finally using Webchat for chatbot user interface
@@ -59,12 +65,13 @@ Then in your html template configure rasa-webchat with following code
 
 The ```socketUrl``` is the url endpoint that we configured with **rasa socketio layer** and the ```profileAvatar``` is the image that is displayed in bot message
 
-Now run the django server and the socketio server using
+Now run the django server and the socketio server seperately using two terminals,
 
 ```
 ../Django-Rasa-Bot> python manage.py runserver
+# then in another command prompt or terminal run
 ../Django-Rasa-Bot/rasachat> python bot.py
 ```
 
-Now open the url [127.0.0.1:8000](http://127.0.0.1:8000) and open the chat widget and 
-enter ```hi there``` and the bot will reply
+Now open the url [127.0.0.1:8000](http://127.0.0.1:8000) and click on the chat widget placed in bottom right and 
+enter ```hi there``` and the bot will reply.
