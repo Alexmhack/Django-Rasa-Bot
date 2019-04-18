@@ -3,7 +3,7 @@
 # Usage
 **Replace the rasachat/models folder with your models folder and run django server and bot.py file seperately**
 
-**The data used to train the chatbot is very minimal, you should extend and improve the training data by updating `rasachat/nlu.nd` & `rasachat/stories.md` files.**
+**The data used to train the chatbot is very minimal, you should replace the rasachat/models folder or extend and improve the training data by updating `rasachat/nlu.nd` & `rasachat/stories.md` files.**
 
 Also refer to [Django-Rasa-Sockets](https://github.com/Alexmhack/Django-Rasa-Sockets) for more info on implementing Django and Rasa with Sockets.
 
