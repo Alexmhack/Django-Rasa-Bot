@@ -12,6 +12,7 @@ actions:
   - utter_cheer_up
   - utter_did_that_help
   - utter_goodbye
+  - action_send_email  # added custom action name
 
 templates:
   utter_greet:
