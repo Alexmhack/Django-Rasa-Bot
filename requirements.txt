@@ -1,0 +1,3 @@
+python-decouple
+greenlet
+django-cors-headers
